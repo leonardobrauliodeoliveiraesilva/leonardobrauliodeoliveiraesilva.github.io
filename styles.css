@@ -331,29 +331,30 @@ footer{
 /* SCROLL NAVBAR*/
 
 .scrolling-active .navtop{
-    background-color: #000000;
-    color: #FFFBF4;
+    background-color: rgba(255, 251, 244, 0.8);
+    color: #000000;
     padding-top: 0.5rem;
+    box-shadow: 2px 2px 10px rgba(122, 59, 93, 0.15);
+    backdrop-filter: blur(20px);
 }
 
 .scrolling-active .navtop .logo p{
-    color: #FFFBF4;
+    color: #000000;
     font-size: 0.8rem;
     line-height: 1rem;
     vertical-align: center;
 }
 
 .scrolling-active #CTA{
-    background-color: #000000;
-    color: #FFFBF4;
-    border: solid #FFFBF4 1px;
+    color: #000000;
+    border: solid #000000 1px;
     padding: 0.5rem;
     font-size: 0.8rem;
 }
 
 .scrolling-active #CTA:hover{
-    background-color: #FFFBF4;
-    color: #000000;
+    background-color: #000000;
+    color: #FFFBF4;
     border: solid #FFFBF4 1px;
 }
 
