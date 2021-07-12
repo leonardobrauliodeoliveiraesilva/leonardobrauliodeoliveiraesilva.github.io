@@ -6,8 +6,8 @@
     <title>Leonardo de Oliveira - ux, tech, biz & people</title>
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    
-    <!-- Hotjar Tracking Code for https://leodeoliveira.com/ -->
+
+    <!-- Hotjar Tracking Code for https://leodeoliveira.com/ 
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -17,22 +17,49 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    
     </script>
+    -->
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            let header = document.querySelector('header');
+            let windowPosition = window.scrollY > 0;
+            header.classList.toggle('scrolling-active', windowPosition);
+        })
+    </script>
+
 </head>
 
 <!-- Começo site-->
+
+<!--
+TO DO:
+- Favicon
+- Bandeiras dos países nos talks
+- navbar que segue
+- parallax forma geométrica
+- links coloridos
+- Detalhes colapsaveis (+ e - de roles & education)
+
+-->
 <body>
     
     <!-- Cabeçalho, com menu e banner-->
     <header>
         <!-- Logo e CTA-->
-        <div class="navtop">
+        <div class="navtop" id="nav">
             <!--Logo-->
             <div class=logo><p>LEONARDO DE OLIVEIRA</p></div>
 
             <!--CTA-->
             <div class="CTA"><a href="https://www.linkedin.com/in/leonardo-braulio/" target="_blank"><div class="buttom buttomlightmode">Message me on LinkedIn!</div></a></div>
         </div>
+    </header>
+
+<!-- Conteúdo site -->
+
+    <main>
 
         <nav>
             <ul>
@@ -40,11 +67,7 @@
                 <a href="https://www.linkedin.com/in/leonardo-braulio/" target="_blank"><li class="hover"> Work <img src="img/elementos/out_link.svg"></li></a>
             </ul>
         </nav>
-    </header>
-
-    <!-- Conteúdo site -->
-    
-    <main>
+     
 
 <!-- APRESENTAÇÃO -->
         <section class="apresentacao container">
@@ -181,7 +204,7 @@
                         <img src="img/logos/icon_puc.png" class="icon">
                     </div>
                     <div class="currentroletitulo ">
-                        <h4>Lecturer - Professionak post-graduate degree</h4>
+                        <h4>Lecturer - Professional post-graduate degree</h4>
                         <h6>at PUC Minas (2019 - present)</h6>
                     </div>
                 </div>
@@ -268,7 +291,7 @@
             <!-- Past roles CARDS-->
             <div class="pastroles">
                 <div class="pastrolescard">
-                    <h5>DIgital Product Leadership</h5>
+                    <h5>Digital Product Leadership</h5>
                     <h6>at Tera (2021)</h6>
                 </div>
                 <div class="pastrolescard">
@@ -284,7 +307,7 @@
                     <h6>at IIBM (2020)</h6>
                 </div>
                 <div class="pastrolescard">
-                    <h5>Data-Driven Professinoals Development</h5>
+                    <h5>Data-Driven Professionals Development</h5>
                     <h6>at Cappra Institute for Data Science (2019)</h6>
                 </div>
         </section>
@@ -301,6 +324,7 @@
     </footer>
 
 </body>
+</html>
 
 <!-- MOLÉCULAS
 
