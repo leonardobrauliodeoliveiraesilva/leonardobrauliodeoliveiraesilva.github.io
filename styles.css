@@ -16,7 +16,7 @@ main{
 
 .container{
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 h1{
@@ -65,6 +65,7 @@ p{
 
 .logo{
     font-weight: 900;
+    color: #000000;
 }
 
 .darkmode{
@@ -226,17 +227,16 @@ nav ul{
     width: 100%; /* Full width */
     display: flex;
     vertical-align: center;
-    background: #FFFBF4;
-    padding:0.5 0 0 0;
+    padding: 0.5rem 0 0 0;
+    transition: 0.2s;
 }
 
 .navtop .logo{
-    flex:1;
     padding: 1rem 0 0 1rem;
 }
 
 .navtop .CTA{
-    flex:1;
+    flex:auto;
     text-align: right;
 }
 
@@ -330,21 +330,31 @@ footer{
 
 /* SCROLL NAVBAR*/
 
-.scrolling-active{
+.scrolling-active .navtop{
     background-color: #000000;
     color: #FFFBF4;
+    padding-top: 0.5rem;
 }
 
-.scrolling-active .buttom .lightmode{
+.scrolling-active .navtop .logo p{
+    color: #FFFBF4;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    vertical-align: center;
+}
+
+.scrolling-active #CTA{
     background-color: #000000;
     color: #FFFBF4;
-    border: solid ##FFFBF4 1px;
+    border: solid #FFFBF4 1px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
 }
 
-.scrolling-active .buttom .lightmode:hover{
+.scrolling-active #CTA:hover{
     background-color: #FFFBF4;
     color: #000000;
-    border: solid ##FFFBF4 1px;
+    border: solid #FFFBF4 1px;
 }
 
 /* MOBILE */
