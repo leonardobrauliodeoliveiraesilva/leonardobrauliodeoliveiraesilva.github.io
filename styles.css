@@ -343,10 +343,15 @@ nav ul{
 .talks{
     text-align: center;
     padding-bottom:1rem;
+    transform: translateX(-1.2rem)
 }
 
 .talks .cardsombra>.lozango{
     margin-right: 1rem;
+}
+
+.talks .titulosessao{
+    transform: translateX(1.2rem)
 }
 
 .cardsombra .buttom{
