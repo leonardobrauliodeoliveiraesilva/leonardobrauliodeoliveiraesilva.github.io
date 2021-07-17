@@ -11,16 +11,17 @@ html{
 }
 
 body{
-    background-color: #FFFBF4;
+    background-color: #10001D;
 }
 
-main{
-    padding: 0 1.5rem 0 1.5rem;
-}
+/*main{
+    
+}*/
 
 .container{
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 1.5rem 0 1.5rem
 }
 
 h1{
@@ -72,6 +73,10 @@ strong{
     font-weight: 900;
 }
 
+section{
+    padding: 0 1.5rem 0 1.5rem;
+}
+
 .credits{
     font-size: 0.5;
     font-style: italic;
@@ -79,11 +84,11 @@ strong{
 
 .logo{
     font-weight: 900;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .darkmode{
-    color:#FFFBF4;
+    color: #FFFFFF;
 }
 
 nav{
@@ -91,14 +96,19 @@ nav{
     font-weight: 650;
     text-align: center;
     padding-top: 5rem;
+    font-family: Merriweather, Times, serif;
 }
 
 nav li{
     display: inline-block;
     padding: 0 2rem 1rem 2rem;
-    color:#000000;
+    color:#FFFFFF;
     
 } 
+
+.inline{
+    height: 1rem;
+}
 
 .hover{
     transition: 0.2s;
@@ -113,7 +123,7 @@ nav .hover:hover{
 }
 
 nav ul{
-    border-bottom: solid #000000 1px;
+    border-bottom: solid #FFFFFF 1px;
     max-width: 300px;
     margin: auto;
 }
@@ -125,6 +135,10 @@ nav ul{
     margin: auto;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.darkmode .titulosessao{
+    border-bottom: solid #FFFFFF 1px; 
 }
 
 .subtitulosessao{
@@ -141,11 +155,20 @@ nav ul{
     text-align: left;
     display: inline-block;
     transition: 0.2s;
-    box-shadow: inset 2px 2px 10px rgba(122, 59, 93, 0.15);
+    border: dotted #8A8A8A 1px;
 }
 
 .cardsombra h5{
     padding-bottom: 0.5rem;
+}
+
+.roles{
+    background-color: #FFFFFF;
+}
+
+.education{
+    background-color: #FFFFFF;
+    padding-bottom: 2rem;
 }
 
 .currentroleheader{
@@ -206,19 +229,19 @@ nav ul{
 }
 
 .buttomlightmode:hover{
-    background-color: #000000;
-    color: #FFFBF4;
+    background-color: #FFFFFF;
+    color: #10001D;
 }
 
 .buttomdarkmode{
-    color:#FFFBF4;
-    border: solid #FFFBF4 1px;
-    background-color: #000000;
+    color:#FFFFFF;
+    border: solid #FFFFFF 1px;
+    background-color: #10001D;
 }
 
 .buttomdarkmode:hover{
-    background-color: #FFFBF4;
-    color: #000000;
+    background-color: #FFFFFF;
+    color: #10001D;
 }
 
 .icon{
@@ -230,6 +253,25 @@ nav ul{
     display: inline-block;
     vertical-align: top;
 }
+
+.imgfull{
+    height: 600px;
+    background-size: cover;
+    background-color:#000000;
+    background-position: center center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.imgfull video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-25px);
+  }
  
 /* FORMATAÇÕES ESPECÍFICAS */
 
@@ -241,8 +283,10 @@ nav ul{
     width: 100%; /* Full width */
     display: flex;
     vertical-align: center;
-    padding: 0.5rem 0 0 0;
+    padding: 0.5rem 1.5rem 0 0;
     transition: 0.2s;
+    z-index: 1;
+    
 }
 
 .navtop .logo{
@@ -298,6 +342,7 @@ nav ul{
 /* Talks */
 .talks{
     text-align: center;
+    padding-bottom:1rem;
 }
 
 .talks .cardsombra>.lozango{
@@ -313,9 +358,8 @@ nav ul{
 
 footer{
     text-align: center;
-    background-color: #000000;
+    background-color: #10001D;
     padding: 1rem 0 1rem 0;
-    margin-top: 1rem;
 }
 
 /* FORMAS */
@@ -324,14 +368,14 @@ footer{
     width: 0.6rem;
     height: 0.6rem;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #FFFFFF;
     margin: 0.5rem auto;
 }
 
 .lozango{
     width: 0.6rem;
     height: 0.6rem;
-    background-color: #000000;
+    background-color: #FFFFFF;
     margin: 0.5rem auto;
     transform: rotate(0.12turn);
 
@@ -350,32 +394,34 @@ footer{
 /* SCROLL NAVBAR*/
 
 .scrolling-active .navtop{
-    background-color: rgba(255, 251, 244, 0.8);
-    color: #000000;
+    background-color: rgba(16, 0, 29, 1);
+    color: #FFFFFF;
     padding-top: 0.5rem;
     box-shadow: 2px 2px 10px rgba(122, 59, 93, 0.15);
-    backdrop-filter: blur(20px);
 }
 
 .scrolling-active .navtop .logo p{
-    color: #000000;
+    color: #FFFFFF;
     font-size: 0.8rem;
     line-height: 1rem;
     vertical-align: center;
 }
 
 .scrolling-active #CTA{
-    color: #000000;
-    border: solid #000000 1px;
+    color: #FFFFFF;
+    border: solid #FFFFFF 1px;
     padding: 0.5rem;
     font-size: 0.8rem;
 }
 
 .scrolling-active #CTA:hover{
-    background-color: #000000;
-    color: #FFFBF4;
-    border: solid #FFFBF4 1px;
+    background-color: #FFFFFF;
+    color: #10001D;
+    border: solid #FFFFFF 1px;
 }
+
+/* PARALLAX */
+
 
 /* MOBILE */
 @media only screen and (max-width:700px){
@@ -406,5 +452,8 @@ footer{
         width: 18rem;
         height: 18rem;
         transform: rotate(0.12turn) translateY(10px) translateX(-30%);
+    }
+    .imgfull{
+        height: 400px;
     }
 }
