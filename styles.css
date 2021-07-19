@@ -7,6 +7,7 @@ html{
     font-size: 16px;
     font-family: "Open Sans", Arial, sans-serif;
     box-sizing: border-box;
+    scroll-behavior:smooth;
     
 }
 
@@ -525,7 +526,10 @@ footer{
     .pastrolescard{
     padding: 1rem 0 1rem 0;
     }
-    .roles, .education{
+    .roles, .education, .work{
         padding:0.5rem;
+    }
+    .work section{
+        padding: 0 0.5rem 0 0.5rem;
     }
 }
