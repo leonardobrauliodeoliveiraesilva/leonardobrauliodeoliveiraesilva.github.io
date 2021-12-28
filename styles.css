@@ -72,6 +72,26 @@ p{
     line-height: 1.5rem;
 }
 
+a.darkmode{
+    color:#FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 0.1rem;
+}
+
+a.darkmode:hover{
+    color:#FFFFFF;
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+a.darkmode:visited{
+    color: #FFFFFF;
+}
+
+a.darkmode:visited:hover{
+    color: #FFFFFF;
+}
+
 strong{
     font-weight: 900;
 }
@@ -121,6 +141,14 @@ nav li{
     display:inline-block;
 }
 
+.flexbox{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+}
+
 nav .hover:hover{
     transform: translateY(-5px) translateX(-5px);
 }
@@ -149,6 +177,7 @@ nav ul{
     margin: auto;
     text-align: center;
     margin-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 .cardsombra{
@@ -477,6 +506,28 @@ footer{
 }
 
 /* PARALLAX */
+
+/* IFRAME */
+
+.iframe_container_2{
+    width: 700px;
+    margin: 1rem;
+}
+.iframe_container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0;
+}
+.iframe_container iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
 
 
 /* MOBILE */
