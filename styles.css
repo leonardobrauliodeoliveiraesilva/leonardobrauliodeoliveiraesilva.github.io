@@ -96,7 +96,7 @@ strong{
 }
 
 section{
-    padding: 0 1.5rem 0 1.5rem;
+    padding: 0 1.5rem 1rem 1.5rem;
 }
 
 .credits{
@@ -166,7 +166,7 @@ nav ul{
 .titulosessao{
     border-bottom: solid #000000 1px;
     max-width:1000px;
-    padding: 3rem 0 1rem 0;   
+    padding: 2rem 0 1rem 0;   
     margin: auto;
     text-align: left;
     margin-bottom: 1rem;
@@ -422,8 +422,8 @@ nav ul{
 /* Talks */
 .talks{
     text-align: center;
-    padding-bottom:1rem;
-    transform: translateX(-1.2rem)
+    padding-bottom: 2rem;
+    transform: translateX(-1.2rem);
 }
 
 .talks .cardsombra>.lozango{
@@ -438,6 +438,12 @@ nav ul{
     margin: 0 0 0 1.5rem;
     float:right;
 }
+
+/* Media Appearance */
+.mediaappearances{
+    background-color: rgba(255,255,255, 0.1) 
+}
+
 
 /* Footer */
 
@@ -519,9 +525,15 @@ footer{
 
 /* IFRAME */
 
-.iframe_container_2{
+.iframe_container_podcast{
     width: 500px;
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    flex: 0.5 1 auto;
+}
+
+.iframe_container_video{
+    width: 500px;
+    margin: 0 1rem 1rem 1rem;
     flex: 0.5 1 auto;
 }
 .iframe_container{
