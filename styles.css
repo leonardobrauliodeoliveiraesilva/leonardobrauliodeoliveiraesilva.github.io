@@ -1,7 +1,7 @@
 /* FORMATAÇÕES GERAIS */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
 
 html{
     font-size: 16px;
@@ -26,29 +26,28 @@ body{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 6rem;
     font-weight:900;
     padding-bottom: 1rem;
-    font-family: Merriweather, Times, serif;
+    font-family: "Big Shoulders Display", Arial, sans-serif;
 }
 
 h2{
-    font-size: 1rem;
-    font-weight: 650;
-    font-family: Merriweather, Times, serif;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: "Big Shoulders Display", Arial, sans-serif;
 }
 
 h3{
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-    font-family: Merriweather, Times, serif;
+    font-size: 1.25rem;
+    font-weight: 650;
+    font-family: "Open Sans", Arial, sans-serif;
 }
 
 h4{
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: Merriweather, Times, serif;
+    font-family: "Open Sans", Arial, sans-serif;
     line-height: 2rem;
 }
 
@@ -56,14 +55,14 @@ h5{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5rem;
-    font-family: Merriweather, Times, serif;
+    font-family: "Open Sans", Arial, sans-serif;
 }
 
 h6{
     font-size: 1rem;
     font-weight:650;
     line-height: 1.5rem;
-    font-family: Merriweather, Times, serif;
+    font-family: "Open Sans", Arial, sans-serif;
 }
 
 p{
@@ -119,7 +118,7 @@ nav{
     font-weight: 650;
     text-align: center;
     padding-top: 5rem;
-    font-family: Merriweather, Times, serif;
+    font-family: "Open Sans", Arial, sans-serif;
 }
 
 nav li{
@@ -149,6 +148,11 @@ nav li{
     justify-content: center;
 }
 
+.stroke{
+    -webkit-text-stroke: 2px #FFFFFF;
+    -webkit-text-fill-color: transparent;
+}
+
 nav .hover:hover{
     transform: translateY(-5px) translateX(-5px);
 }
@@ -161,10 +165,10 @@ nav ul{
 
 .titulosessao{
     border-bottom: solid #000000 1px;
-    max-width:800px;
-    padding: 2rem 0 1rem 0;   
+    max-width:1000px;
+    padding: 3rem 0 1rem 0;   
     margin: auto;
-    text-align: center;
+    text-align: left;
     margin-bottom: 1rem;
 }
 
@@ -175,8 +179,8 @@ nav ul{
 .subtitulosessao{
     padding: 1rem 0 1rem 0;   
     margin: auto;
-    text-align: center;
-    margin-bottom: 1rem;
+    text-align: left;
+    margin-bottom: 0;
     line-height: 1.5rem;
 }
 
@@ -376,8 +380,14 @@ nav ul{
 
 /* Apresentação */
 .headline{
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
+}
+
+.headlinebig{
+    font-size: 10rem;
+    text-align: center;
+    line-height: 90%;
 }
 
 .apresentacao{
@@ -510,8 +520,9 @@ footer{
 /* IFRAME */
 
 .iframe_container_2{
-    width: 700px;
+    width: 500px;
     margin: 1rem;
+    flex: 0.5 1 auto;
 }
 .iframe_container{
     position: relative;
@@ -537,6 +548,9 @@ footer{
     }
     .headline{
         font-size: 3rem;
+    }
+    .headlinebig{
+        font-size: 6rem;
     }
     .profile{
         text-align:center;
