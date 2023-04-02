@@ -71,6 +71,10 @@ p{
     line-height: 1.5rem;
 }
 
+em{
+    font-style: oblique;
+}
+
 a.darkmode{
     color:#FFFFFF;
     text-decoration: underline;
@@ -271,6 +275,10 @@ nav ul{
 .workcard:hover .currentroleheader .currentroleicon{
     background-color: #9E00FF;
 
+}
+
+.workcard:hover .currentroleheader  .icondisabled{
+    background-color: #10001D;
 }
 
 .pastrolescard{
