@@ -259,7 +259,7 @@ nav ul{
 }
 
 .workcard .currentroletext{
-    padding: 0.5rem 0 0 0;
+    padding: 1rem 0 0 0; /* Claude: aumentado de 0.5rem para 1rem (16px) entre subtítulo e parágrafo */
 }
 
 .workcard .currentroleheader .currentroleicon{
@@ -279,6 +279,36 @@ nav ul{
 
 .workcard:hover .currentroleheader  .icondisabled{
     background-color: #10001D;
+}
+
+/* WORK SECTION GRID LAYOUT - Claude edits */
+/* Grid base: layout em 1 coluna para mobile/tablet, gap 2rem entre cards */
+.work section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px; /* Aumentado de 1000px para maior espaço em desktop */
+    margin: 0 auto;
+}
+
+/* Título ocupa largura total do grid em ambas as colunas */
+.work section .titulosessao {
+    grid-column: 1 / -1;
+}
+
+/* Breakpoint em 1025px: muda para 2 colunas e equaliza altura dos cards */
+@media only screen and (min-width: 1025px) {
+    .work section {
+        grid-template-columns: repeat(2, 1fr); /* Muda de 1 para 2 colunas */
+        align-items: stretch; /* Força stretch para igualar altura */
+    }
+
+    /* Cards ocupam 100% da altura da célula do grid */
+    .work section .workcard {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .pastrolescard{
